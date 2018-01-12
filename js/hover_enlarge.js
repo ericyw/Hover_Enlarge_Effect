@@ -1,23 +1,24 @@
+// show the large image
 function showPreview( event ) {
     
     $( "#featured-preview" ).show();
 };
-
+// after mouse leave the wrap, hide large images
 function hidePreview( event ) {
     
     $( "#featured-preview" ).hide();
 }
-
+// change to show the currently hovered image during the mouse moving
 function updatePreview( index ) {
     
     $( "#featured-preview img" ).hide().eq( index ).show();
 };
-
+// move the large image horizontally
 function movePreview( event ) {
     
     var content_position = $( "#featured-content" ).offset();
     
-    $( "#featured-preview" ).css( "left", event.pageX - content_position.left - 180 );
+    $( "#featured-preview" ).css( "left", event.pageX - content_position.left - 300 );
 };
 
 $( document ).ready( function() {
@@ -40,7 +41,7 @@ $( document ).ready( function() {
         })
         .show();
     
-    overlay_wrap.mouseenter( showPreview )
+    overlay_wrap.mouseenter( showPreview ) 
             .mouseleave( hidePreview );
     
 });

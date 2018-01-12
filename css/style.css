@@ -45,25 +45,25 @@ img {
 }
 #featured-content a {
     float: left;
-    margin: 0 5px;
+    margin: 0 0;
 }
 #featured-content a img {
-    border: 1px solid #888;
-    padding: 10px 10px;
+    border: 0 solid #888;
+    padding: 10px 0;
     vertical-align: top;
     width: 150px;
     height: 100px;
 }
 #featured-preview {
     position: absolute;
-    top: -65px;
+    top: -50px;
     left: 0;
     z-index: 90;
     display: none;
     overflow: hidden;
-    width: 500px;
-    height: 400px;
-}
+    width: 800px;
+    height: 600px;    
+    }
 #featured-overlay {
     position: absolute;
     top: 0;
